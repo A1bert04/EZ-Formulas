@@ -240,6 +240,27 @@ function menuMRUA () { // menu para el MRUA
                 console.log();
 
             };
+        case '5':
+            console.log();
+            console.log("Has elegido 5. Otros");
+            console.log();
+            console.log("1. Ir al menú principal")
+            console.log("2. Salir")
+            console.log();
+            let opcion = prompt('Elige una opción: ');
+            switch (opcion) {
+                case '1':
+                    menu();
+                    break;
+                case '2':
+                    exit();
+                    break;
+                default:
+                    console.log();
+                    console.log("Has elegido una opción incorrecta");
+                    console.log();
+                    menuMRUA();
+            };
         default:
             console.log();
             console.log("Has elegido una opción incorrecta");
@@ -250,12 +271,12 @@ function menuMRUA () { // menu para el MRUA
 
 function exit () {
     console.log();
-    console.log('has elegido salir');
+    console.log("Hasta pronto!")
     console.log();
     process.exit();
 };
 
-menu()
+menu();
 
 // Recordar compliar a exe con npm pkg 
 

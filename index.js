@@ -238,7 +238,7 @@ function menuMRUA () { // menu para el MRUA
                 console.log();
                 console.log(`El tiempo de aceleración del cuerpo es: ${MRUA4.calct} segundos`);
                 console.log();
-
+                menuMRUA();
             };
         case '5':
             console.log();
